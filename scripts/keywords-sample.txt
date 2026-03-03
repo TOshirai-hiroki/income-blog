@@ -1,0 +1,30 @@
+# AIツール比較 キーワードリスト
+# 1行1キーワード、#で始まる行はコメント
+# 形式: キーワード,カテゴリ,タグ1|タグ2|タグ3
+
+# === AIチャット系 ===
+ChatGPT 使い方 初心者ガイド,AIチャット,ChatGPT|使い方|初心者
+Claude 使い方 完全ガイド,AIチャット,Claude|使い方|Anthropic
+Gemini AI 特徴と使い方,AIチャット,Gemini|Google|使い方
+ChatGPT Plus 有料版は必要か,AIチャット,ChatGPT|Plus|有料版
+ChatGPT vs Gemini 比較,AIチャット,ChatGPT|Gemini|比較
+
+# === AI画像生成系 ===
+Midjourney 使い方 初心者,AI画像生成,Midjourney|使い方|初心者
+Stable Diffusion 始め方,AI画像生成,Stable Diffusion|インストール|使い方
+Canva AI 画像生成 使い方,AI画像生成,Canva|AI|画像生成
+Adobe Firefly 特徴と料金,AI画像生成,Adobe Firefly|料金|商用利用
+
+# === AI動画生成系 ===
+Sora AI 動画生成 使い方,AI動画生成,Sora|OpenAI|動画生成
+Runway ML 動画編集 AI,AI動画生成,Runway|動画編集|AI
+
+# === 業務効率化系 ===
+Notion AI 活用術,業務効率化AI,Notion|AI|活用術
+AI議事録ツール おすすめ,業務効率化AI,議事録|AI|自動化
+DeepL vs Google翻訳 比較,業務効率化AI,DeepL|Google翻訳|比較
+
+# === コーディング系 ===
+GitHub Copilot 使い方,AIコーディング,GitHub Copilot|プログラミング|AI
+Claude Code 開発者ツール,AIコーディング,Claude Code|開発|ターミナル
+Cursor AI エディタ レビュー,AIコーディング,Cursor|AIエディタ|プログラミング

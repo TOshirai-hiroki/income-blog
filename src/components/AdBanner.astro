@@ -1,0 +1,28 @@
+---
+interface Props {
+	slot?: 'top' | 'middle' | 'bottom' | 'sidebar';
+}
+
+const { slot = 'middle' } = Astro.props;
+---
+
+<!--
+  AdSense広告バナー
+  Google AdSense承認後、以下のコメントを解除して実際の広告コードに置き換えてください。
+
+  使い方: <AdBanner slot="top" />
+  slotの種類: top（記事上部）, middle（記事中）, bottom（記事下部）, sidebar（サイドバー）
+-->
+<div class={`ad-banner ad-${slot} my-6 text-center`} data-ad-slot={slot}>
+	<div class="bg-gray-100 border border-dashed border-gray-300 rounded-lg p-4 text-gray-400 text-sm">
+		<!-- AdSense承認後にこのdivを以下に置き換え -->
+		<!-- <ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-XXXXXXXXXX"
+			data-ad-slot="XXXXXXXXXX"
+			data-ad-format="auto"
+			data-full-width-responsive="true"></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+		広告スペース ({slot})
+	</div>
+</div>

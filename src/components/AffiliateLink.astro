@@ -1,0 +1,30 @@
+---
+interface Props {
+	href: string;
+	text: string;
+	badge?: string;
+}
+
+const { href, text, badge = '公式サイトはこちら' } = Astro.props;
+---
+
+<!--
+  アフィリエイトリンクコンポーネント
+
+  使い方（Markdown記事内では直接HTMLとして記述するか、MDXファイルで使用）:
+
+  MDXファイルでの使い方:
+  import AffiliateLink from '../../components/AffiliateLink.astro';
+  <AffiliateLink href="https://example.com" text="ツール名" badge="無料で試す" />
+-->
+<div class="affiliate-link my-4 p-4 bg-blue-50 border border-blue-200 rounded-lg text-center">
+	<a
+		href={href}
+		target="_blank"
+		rel="nofollow noopener sponsored"
+		class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg no-underline hover:bg-blue-700 transition font-bold"
+	>
+		{text} - {badge}
+	</a>
+	<p class="text-xs text-gray-400 mt-2 mb-0">※ 上記リンクから登録すると、当サイトに紹介料が支払われる場合があります</p>
+</div>

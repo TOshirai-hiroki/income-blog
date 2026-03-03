@@ -1,0 +1,49 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={`サイト概要 | ${SITE_TITLE}`} description="AI比較ラボについて。当サイトの目的と運営方針をご紹介します。" />
+	</head>
+	<body>
+		<Header />
+		<main class="max-w-3xl mx-auto">
+			<h1 class="text-2xl font-bold mb-6">サイト概要</h1>
+
+			<div class="prose bg-white p-6 rounded-lg shadow-sm">
+				<h2>AI比較ラボとは</h2>
+				<p>AI比較ラボは、急速に進化するAIツール・サービスの世界をわかりやすく解説するレビューサイトです。</p>
+				<p>ChatGPT、Claude、Geminiなどの大規模言語モデルから、画像生成AI、動画生成AI、業務効率化ツールまで、幅広いAIサービスを実際に使って比較・レビューしています。</p>
+
+				<h2>当サイトの特徴</h2>
+				<ul>
+					<li><strong>実際に使ったレビュー</strong> - すべてのツールを実際に使用した上で評価しています</li>
+					<li><strong>わかりやすい比較表</strong> - 機能・料金・使いやすさを一目で比較できます</li>
+					<li><strong>最新情報を随時更新</strong> - AIツールは日々進化するため、情報を定期的に更新しています</li>
+					<li><strong>初心者にもやさしい</strong> - 専門用語をできるだけ避け、誰でも理解できる内容を心がけています</li>
+				</ul>
+
+				<h2>対象読者</h2>
+				<ul>
+					<li>AIツールに興味があるけど、どれを選べばいいかわからない方</li>
+					<li>業務効率化のためにAIツールを導入したいビジネスパーソン</li>
+					<li>最新のAI技術トレンドを知りたい方</li>
+					<li>副業やクリエイティブ活動にAIを活用したい方</li>
+				</ul>
+
+				<h2>運営について</h2>
+				<p>当サイトは、AIツールを日常的に活用している個人が運営しています。サイト運営費用の一部は、アフィリエイトプログラムおよび広告収入により賄われています。</p>
+				<p>レビューの公正性を保つため、アフィリエイト報酬の有無に関わらず、正直な評価を行うことをお約束します。</p>
+
+				<h2>お問い合わせ</h2>
+				<p>ご質問やご意見がございましたら、<a href="/contact">お問い合わせページ</a>よりご連絡ください。</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

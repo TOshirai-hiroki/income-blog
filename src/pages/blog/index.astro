@@ -1,0 +1,99 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const categories = ['すべて', ...new Set(posts.map((p) => p.data.category))];
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead
+			title={`記事一覧 | ${SITE_TITLE}`}
+			description="AIツールの比較レビュー記事一覧。最新のAIサービス情報をお届けします。"
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="text-2xl font-bold mb-6">記事一覧</h1>
+
+			<!-- Category Filter -->
+			<div class="flex flex-wrap gap-2 mb-8">
+				{categories.map((cat) => (
+					<button
+						class="category-btn px-3 py-1 text-sm rounded-full bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600 shadow-sm transition cursor-pointer border-none"
+						data-category={cat}
+					>
+						{cat}
+					</button>
+				))}
+			</div>
+
+			<!-- Post Grid -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="post-grid">
+				{posts.map((post) => (
+					<article
+						class="post-card bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition"
+						data-category={post.data.category}
+					>
+						<a href={`/blog/${post.id}/`} class="no-underline">
+							{post.data.heroImage && (
+								<Image
+									width={480}
+									height={240}
+									src={post.data.heroImage}
+									alt={post.data.title}
+									class="w-full h-40 object-cover"
+								/>
+							)}
+							<div class="p-4">
+								<span class="text-xs text-blue-600 bg-blue-50 px-2 py-1 rounded">
+									{post.data.category}
+								</span>
+								<h2 class="text-base font-bold mt-2 mb-1 text-gray-800 leading-snug">
+									{post.data.title}
+								</h2>
+								<p class="text-sm text-gray-500 mb-2 line-clamp-2">{post.data.description}</p>
+								<time class="text-xs text-gray-400">
+									<FormattedDate date={post.data.pubDate} />
+								</time>
+							</div>
+						</a>
+					</article>
+				))}
+			</div>
+		</main>
+		<Footer />
+
+		<script>
+			document.querySelectorAll('.category-btn').forEach((btn) => {
+				btn.addEventListener('click', () => {
+					const category = (btn as HTMLElement).dataset.category;
+					document.querySelectorAll('.post-card').forEach((card) => {
+						const el = card as HTMLElement;
+						if (category === 'すべて' || el.dataset.category === category) {
+							el.style.display = '';
+						} else {
+							el.style.display = 'none';
+						}
+					});
+					document.querySelectorAll('.category-btn').forEach((b) => {
+						b.classList.remove('bg-blue-600', 'text-white');
+						b.classList.add('bg-white', 'text-gray-600');
+					});
+					btn.classList.remove('bg-white', 'text-gray-600');
+					btn.classList.add('bg-blue-600', 'text-white');
+				});
+			});
+		</script>
+	</body>
+</html>
