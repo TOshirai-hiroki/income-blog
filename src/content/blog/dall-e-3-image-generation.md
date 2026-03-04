@@ -99,6 +99,16 @@ DALL-E 3はChatGPTの一部として利用できます。
 | テキスト反映の正確さ | ◎ | ○ |
 | アーティスティック度 | ○ | ◎ |
 
+## もっと手軽に始めるなら「ConoHa AI Canvas」
+
+DALL-E 3のほかにも、ブラウザだけで本格的なAI画像生成ができるサービスがあります。「ConoHa AI Canvas」は、インストール不要で手軽にAI画像を生成できるサービスです。
+
+<div style="margin: 2rem 0; padding: 1.5rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; text-align: center;">
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZ8K8+4BE5O2+50+7RTY1E" rel="nofollow noopener sponsored" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">ブラウザだけでできる 本格的なAI画像生成 【ConoHa AI Canvas】</a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AZ8K8+4BE5O2+50+7RTY1E" alt="">
+<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">※ 上記リンクから登録すると、当サイトに紹介料が支払われる場合があります</p>
+</div>
+
 ## まとめ
 
 DALL-E 3は、ChatGPTから手軽に使えるのが最大の魅力です。日本語で指示を出せるため、英語が苦手な方でも気軽にAI画像生成を始められます。

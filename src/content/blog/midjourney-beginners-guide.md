@@ -88,6 +88,16 @@ ECサイトやマーケティング素材に使えるイメージ画像を生成
 - **実在の人物**: 実在の人物の画像生成は避けましょう
 - **プロンプトの工夫**: 最初は思い通りの画像が出ないこともありますが、プロンプトを調整していくことで改善できます
 
+## ブラウザだけで始めるなら「ConoHa AI Canvas」もおすすめ
+
+Midjourneyのように専用ツールを使うのが面倒な方には、ブラウザだけで本格的なAI画像生成ができる「ConoHa AI Canvas」もおすすめです。面倒なインストール不要で、すぐにAI画像生成を始められます。
+
+<div style="margin: 2rem 0; padding: 1.5rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; text-align: center;">
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZ8K8+4BE5O2+50+7RTY1E" rel="nofollow noopener sponsored" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">ブラウザだけでできる 本格的なAI画像生成 【ConoHa AI Canvas】</a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AZ8K8+4BE5O2+50+7RTY1E" alt="">
+<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">※ 上記リンクから登録すると、当サイトに紹介料が支払われる場合があります</p>
+</div>
+
 ## まとめ
 
 Midjourneyは、デザインスキルがなくてもプロ品質の画像を作成できる画期的なツールです。ブログやSNS、ビジネス資料など、さまざまな場面で活用できます。

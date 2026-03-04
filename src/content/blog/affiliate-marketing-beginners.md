@@ -30,6 +30,12 @@ affiliate: true
 - 最低支払額：1,000円
 - 特徴：セルフバック（自分で購入して報酬を得る）が充実
 
+<div style="margin: 1rem 0; padding: 1rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; text-align: center;">
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZ8K8+5YCTU+0K+10GL36" rel="nofollow noopener sponsored" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">A8.net 無料会員登録はこちら</a>
+<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AZ8K8+5YCTU+0K+10GL36" alt="">
+<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">※ 上記リンクから登録すると、当サイトに紹介料が支払われる場合があります</p>
+</div>
+
 ### もしもアフィリエイト
 
 Amazon・楽天・Yahoo!ショッピングの商品を紹介できるのが強みです。
