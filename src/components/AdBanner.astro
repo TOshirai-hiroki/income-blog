@@ -1,12 +1,12 @@
 ---
 interface Props {
-	slot?: 'top' | 'middle' | 'bottom' | 'sidebar';
+	position?: 'top' | 'middle' | 'bottom' | 'sidebar';
 }
 
-const { slot = 'middle' } = Astro.props;
+const { position = 'middle' } = Astro.props;
 ---
 
-<div class={`ad-banner ad-${slot} my-6 text-center`} data-ad-slot={slot}>
+<div class={`ad-banner ad-${position} my-6 text-center`} data-ad-position={position}>
 	<ins class="adsbygoogle"
 		style="display:block"
 		data-ad-client="ca-pub-2016529992214438"
