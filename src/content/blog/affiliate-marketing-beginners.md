@@ -93,6 +93,14 @@ affiliate: true
 | 期間 | やること | 目標 |
 |------|---------|------|
 | 月1 | ブログ開設、ASP登録、ジャンル決定 | 5記事公開 |
+
+ブログ開設には**レンタルサーバー**が必要です。コスパ重視なら月額220円から始められる「スターレンタルサーバー」がおすすめです。
+
+<div style="margin: 1rem 0; padding: 1rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; text-align: center;">
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZ9C3+6AU69E+1WTI+64JTE" rel="nofollow noopener sponsored" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">スターレンタルサーバーの詳細はこちら</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AZ9C3+6AU69E+1WTI+64JTE" alt="">
+<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">※ 上記リンクから契約すると、当サイトに紹介料が支払われる場合があります</p>
+</div>
 | 月2 | キーワードリサーチ、商品レビュー記事 | 15記事、初クリック |
 | 月3 | 比較記事、ランキング記事 | 20記事、初成約 |
 | 月4 | アクセス解析、記事改善 | 検索流入開始 |

@@ -150,6 +150,18 @@ AIも間違えます。特に**最新のライブラリのバージョン情報*
 
 ---
 
+## プログラミングスクールで本格的に学ぶなら
+
+AIツールでの独学に加えて、**体系的にプログラミングを学びたいお子さん**にはプログラミングスクールもおすすめです。サイバーエージェントが運営する「Tech Kids School」は、小学生向けのプログラミングスクールとして定評があります。
+
+<div style="margin: 1rem 0; padding: 1rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.5rem; text-align: center;">
+<a href="https://px.a8.net/svt/ejp?a8mat=4AZ9C3+6Y22UQ+4380+BX3J6" rel="nofollow noopener sponsored" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2563eb; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: bold;">Tech Kids School【テックキッズスクール】の詳細はこちら</a>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4AZ9C3+6Y22UQ+4380+BX3J6" alt="">
+<p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; margin-bottom: 0;">※ 上記リンクから申し込むと、当サイトに紹介料が支払われる場合があります</p>
+</div>
+
+---
+
 ## よくある質問（FAQ）
 
 ### Q. プログラミング完全初心者でもAIを使って学べる？
