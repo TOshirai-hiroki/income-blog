@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import AdBanner from '../components/AdBanner.astro';
 import { SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -69,9 +70,13 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 					)}
 				</header>
 
+				<AdBanner slot="top" />
+
 				<div class="prose">
 					<slot />
 				</div>
+
+				<AdBanner slot="bottom" />
 
 				<div class="mt-12 pt-6 border-t border-gray-200 text-center">
 					<a
