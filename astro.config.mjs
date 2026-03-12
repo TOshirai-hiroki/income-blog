@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ai-hikaku-lab.com',
+  site: 'https://ai-navi-tools.com',
   integrations: [mdx(), sitemap()],
 
   vite: {
