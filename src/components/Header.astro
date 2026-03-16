@@ -3,15 +3,36 @@ import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="sticky top-0 z-50 header-gradient shadow-md">
 	<nav class="max-w-[960px] mx-auto flex items-center justify-between px-4 py-3">
 		<h2 class="m-0 text-lg font-bold">
-			<a href="/" class="text-blue-600 no-underline hover:no-underline">{SITE_TITLE}</a>
+			<a href="/" class="flex items-center gap-2 text-white no-underline hover:no-underline">
+				<img src="/images/logo-icon.png" alt="" class="w-8 h-8 rounded" />
+				<span>{SITE_TITLE}</span>
+			</a>
 		</h2>
-		<div class="flex gap-4 text-sm">
+		<div class="flex gap-5 text-sm">
 			<HeaderLink href="/">ホーム</HeaderLink>
 			<HeaderLink href="/blog">記事一覧</HeaderLink>
 			<HeaderLink href="/about">サイト概要</HeaderLink>
 		</div>
 	</nav>
 </header>
+
+<style>
+	.header-gradient {
+		background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 50%, #3b82f6 100%);
+	}
+	nav a, nav :global(a) {
+		color: white !important;
+	}
+	nav :global(a:hover) {
+		color: #bfdbfe !important;
+		text-decoration: none;
+	}
+	nav :global(a.active) {
+		color: #bfdbfe !important;
+		text-decoration: underline;
+		text-underline-offset: 4px;
+	}
+</style>
