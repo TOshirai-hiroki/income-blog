@@ -58,6 +58,14 @@ a:hover {
   color: var(--accent-dark);
   text-decoration: underline;
 }
+/* Buttons: let Tailwind classes control text color */
+a[class*="bg-"] {
+  color: inherit;
+}
+a[class*="bg-"]:hover {
+  color: inherit;
+  text-decoration: none;
+}
 
 p {
   margin-bottom: 1em;

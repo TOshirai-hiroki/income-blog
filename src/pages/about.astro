@@ -2,7 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import { Image } from 'astro:assets';
 import { SITE_TITLE } from '../consts';
+import iconImage from '../assets/icon.png';
 ---
 
 <!doctype html>
@@ -22,7 +24,7 @@ import { SITE_TITLE } from '../consts';
 
 				<h2>運営者プロフィール</h2>
 				<div class="flex items-start gap-4 mb-4 not-prose">
-					<img src="/assets/icon.png" alt="ゴリおじ" class="w-20 h-20 rounded-full flex-shrink-0 object-cover" />
+					<Image src={iconImage} alt="ゴリおじ" class="w-20 h-20 rounded-full flex-shrink-0 object-cover" width={80} height={80} />
 					<div>
 						<p class="font-bold text-lg m-0">ゴリおじ</p>
 						<p class="text-gray-500 text-sm m-0">AI比較ラボ 運営者</p>
