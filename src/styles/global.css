@@ -112,8 +112,8 @@ hr {
   margin: 1em 0;
 }
 table {
-  min-width: 600px;
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
 }
 th, td {
@@ -121,9 +121,6 @@ th, td {
   border: 1px solid rgb(var(--gray-light));
   text-align: left;
   white-space: nowrap;
-}
-td {
-  white-space: normal;
 }
 th {
   background-color: #f1f5f9;
