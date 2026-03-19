@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -11,6 +12,27 @@ import { SITE_TITLE } from '../consts';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage, category, tags } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// 関連記事: 同じカテゴリの記事を最大3件取得
+const now = new Date();
+const allPosts = (await getCollection('blog')).filter(
+	(post) => post.data.pubDate <= now && post.data.title !== title
+);
+const relatedPosts = allPosts
+	.filter((post) => post.data.category === category)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
+// 同カテゴリが3件に満たない場合は他カテゴリから補完
+const remaining = 3 - relatedPosts.length;
+if (remaining > 0) {
+	const otherPosts = allPosts
+		.filter((post) => post.data.category !== category)
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+		.slice(0, remaining);
+	relatedPosts.push(...otherPosts);
+}
 ---
 
 <html lang="ja">
@@ -25,8 +47,25 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 				description: description,
 				datePublished: pubDate.toISOString(),
 				dateModified: (updatedDate || pubDate).toISOString(),
+				mainEntityOfPage: {
+					'@type': 'WebPage',
+					'@id': canonicalURL.toString(),
+				},
 				author: { '@type': 'Organization', name: 'AI比較ラボ' },
 				publisher: { '@type': 'Organization', name: 'AI比較ラボ' },
+				...(heroImage ? { image: new URL(heroImage.src, Astro.site).toString() } : {}),
+			})}
+		/>
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'BreadcrumbList',
+				itemListElement: [
+					{ '@type': 'ListItem', position: 1, name: 'ホーム', item: Astro.site?.toString() },
+					{ '@type': 'ListItem', position: 2, name: '記事一覧', item: new URL('/blog', Astro.site).toString() },
+					{ '@type': 'ListItem', position: 3, name: title },
+				],
 			})}
 		/>
 	</head>
@@ -87,7 +126,22 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 				});
 			</script>
 
-				<div class="mt-12 pt-6 border-t border-gray-200 text-center">
+				{relatedPosts.length > 0 && (
+					<div class="mt-12 pt-6 border-t border-gray-200">
+						<h2 class="text-xl font-bold mb-4">関連記事</h2>
+						<div class="grid gap-4 sm:grid-cols-3">
+							{relatedPosts.map((post) => (
+								<a href={`/blog/${post.id}/`} class="block p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition no-underline">
+									<span class="text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded">{post.data.category}</span>
+									<h3 class="text-sm font-semibold mt-2 text-gray-800 line-clamp-2">{post.data.title}</h3>
+									<p class="text-xs text-gray-500 mt-1"><FormattedDate date={post.data.pubDate} /></p>
+								</a>
+							))}
+						</div>
+					</div>
+				)}
+
+				<div class="mt-8 pt-6 border-t border-gray-200 text-center">
 					<a
 						href="/blog"
 						class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg no-underline hover:bg-blue-700 transition"
