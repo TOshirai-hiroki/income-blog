@@ -9,8 +9,18 @@
 - プロジェクトパス: `C:\Users\hirok\blogs\ai-blog`
 - GitHubリポジトリ: https://github.com/TOshirai-hiroki/income-blog.git
 - 公開URL: https://ai-navi-tools.com
-- 記事数: 20本（全てリライト済み）
+- 記事数: 25本以上（偉人の言葉＋AIニュース）
 - AdSense: 承認待ち（ca-pub-2016529992214438）
+- もしもアフィリエイトAmazon: 承認済み（a_id=5410316）
+- GA4: G-0H93XKFK74
+- スラッシュコマンド: `/ai-articles N` で記事一括作成可能
+
+## 関連ドキュメント
+
+- **`ai-blog/STYLE-GUIDE.md`** — 記事の文体・フォーマット・トーン定義
+- **`/ai-articles`** — 記事一括作成コマンド（例: `/ai-articles 5`）
+
+---
 
 ## カテゴリ
 
@@ -28,7 +38,7 @@
 
 #### Step 1: ニュース・データを配置
 `C:\Users\hirok\blogs\input\ai\YYYY-MM-DD\` に以下を配置：
-- gensparkでリサーチしたニュースURL・サマリー
+- WebSearchでリサーチしたニュースURL・サマリー
 - 自分のコメントやメモ（任意）
 
 #### Step 2: Claude Codeで記事生成
@@ -38,6 +48,12 @@
 4. `ai-blog/src/content/blog/` に記事ファイルを配置
 5. ユーザーが確認・編集（スタイル学習のため重要）
 6. git commit & push → Cloudflare自動デプロイ
+
+#### Step 3: X投稿用ポストを作成
+記事公開後、X（Twitter）投稿用のポストを3本作成する：
+- 各ポストは異なる切り口（問いかけ型、意外性フック型、データ訴求型など）
+- 記事URLを含める
+- 朝・昼・夜など時間をずらして投稿する想定で作成
 
 ### 偉人の言葉記事
 
@@ -54,6 +70,12 @@
 4. `ai-blog/src/content/blog/` に記事ファイルを配置
 5. ユーザーが確認・編集
 6. git commit & push → Cloudflare自動デプロイ
+
+#### Step 3: X投稿用ポストを作成
+記事公開後、X（Twitter）投稿用のポストを3本作成する：
+- 各ポストは異なる切り口（問いかけ型、意外性フック型、データ訴求型など）
+- 記事URLを含める
+- 朝・昼・夜など時間をずらして投稿する想定で作成
 
 ---
 
@@ -95,4 +117,4 @@
 - 月間PV: Search Console/Cloudflare Analyticsで追跡
 - アフィリエイトCVR: A8.net管理画面で確認
 - AdSense収益: Google AdSense管理画面で確認
-- 記事投稿数: 月8〜10本目標
+- 記事投稿数: 月8本目標（週2本ペース）
