@@ -2,24 +2,90 @@
 const today = new Date();
 ---
 
-<footer class="footer-gradient text-center py-10 mt-12 text-sm">
-	<div class="max-w-[960px] mx-auto px-4">
-		<div class="flex items-center justify-center gap-2 mb-4">
-			<img src="/images/logo-icon.png" alt="" class="w-6 h-6 rounded" />
-			<span class="font-bold text-blue-200 text-base">AI比較ラボ</span>
+<footer class="footer-gradient py-12 mt-12 text-sm relative overflow-hidden">
+	<div class="footer-top-border"></div>
+	<div class="footer-glow-dot footer-glow-dot-1"></div>
+	<div class="footer-glow-dot footer-glow-dot-2"></div>
+	<div class="footer-glow-dot footer-glow-dot-3"></div>
+	<div class="max-w-[960px] mx-auto px-4 relative z-10">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+			<!-- Column 1: Site Info -->
+			<div>
+				<div class="flex items-center gap-2 mb-3">
+					<img src="/images/logo-icon.png" alt="" class="w-6 h-6 rounded" />
+					<span class="font-bold text-blue-200 text-base">AI比較ラボ</span>
+				</div>
+				<p class="text-blue-100/60 text-sm leading-relaxed m-0">
+					最新のAIツールを実際に使って比較・レビュー。あなたの用途に合ったベストなAIツールが見つかります。
+				</p>
+			</div>
+
+			<!-- Column 2: Navigation -->
+			<div>
+				<h3 class="text-blue-200 font-bold text-sm mb-3 tracking-wide">ナビゲーション</h3>
+				<ul class="list-none p-0 m-0 space-y-2">
+					<li><a href="/" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">ホーム</a></li>
+					<li><a href="/blog" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">記事一覧</a></li>
+					<li><a href="/about" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">サイト概要</a></li>
+					<li><a href="/contact" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">お問い合わせ</a></li>
+				</ul>
+			</div>
+
+			<!-- Column 3: About & Legal -->
+			<div>
+				<h3 class="text-blue-200 font-bold text-sm mb-3 tracking-wide">About AI比較ラボ</h3>
+				<p class="text-blue-100/60 text-sm leading-relaxed m-0 mb-3">
+					ChatGPT、Claude、Gemini、画像生成AIなど、話題のAIツールを独自の視点で比較します。
+				</p>
+				<ul class="list-none p-0 m-0 space-y-2">
+					<li><a href="/privacy" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">プライバシーポリシー</a></li>
+					<li><a href="/terms" class="text-blue-100/70 hover:text-blue-100 no-underline transition text-sm">利用規約</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="flex justify-center gap-6 mb-4">
-			<a href="/about" class="text-blue-100/70 hover:text-blue-100 no-underline transition">サイト概要</a>
-			<a href="/privacy" class="text-blue-100/70 hover:text-blue-100 no-underline transition">プライバシーポリシー</a>
-			<a href="/terms" class="text-blue-100/70 hover:text-blue-100 no-underline transition">利用規約</a>
-			<a href="/contact" class="text-blue-100/70 hover:text-blue-100 no-underline transition">お問い合わせ</a>
+
+		<div class="border-t border-blue-100/10 pt-6 text-center">
+			<p class="m-0 text-blue-100/50">&copy; {today.getFullYear()} AI比較ラボ All rights reserved.</p>
 		</div>
-		<p class="m-0 text-blue-100/50">&copy; {today.getFullYear()} AI比較ラボ All rights reserved.</p>
 	</div>
 </footer>
 
 <style>
 	.footer-gradient {
 		background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+	}
+	.footer-top-border {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, transparent 0%, #3b82f6 30%, transparent 50%, #3b82f6 70%, transparent 100%);
+	}
+	.footer-glow-dot {
+		position: absolute;
+		border-radius: 50%;
+		pointer-events: none;
+	}
+	.footer-glow-dot-1 {
+		width: 120px;
+		height: 120px;
+		top: 20%;
+		left: 5%;
+		background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+	}
+	.footer-glow-dot-2 {
+		width: 80px;
+		height: 80px;
+		top: 60%;
+		right: 10%;
+		background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+	}
+	.footer-glow-dot-3 {
+		width: 60px;
+		height: 60px;
+		bottom: 10%;
+		left: 40%;
+		background: radial-gradient(circle, rgba(14, 165, 233, 0.06) 0%, transparent 70%);
 	}
 </style>

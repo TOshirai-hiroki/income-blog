@@ -23,19 +23,26 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
 		<Header />
 		<main>
 			<!-- Hero Section -->
-			<section class="hero-section relative overflow-hidden rounded-2xl mb-10 -mt-2">
+			<section class="hero-section relative overflow-hidden rounded-2xl mb-12 -mt-2">
+				<div class="hero-bg absolute inset-0"></div>
+				<div class="hero-glow"></div>
 				<img
 					src="/images/hero-banner.png"
 					alt="AI technology workspace"
-					class="w-full h-[360px] md:h-[440px] object-cover object-center"
+					class="w-full h-[360px] md:h-[480px] object-cover object-center opacity-30 mix-blend-luminosity"
 				/>
-				<div class="absolute inset-0 hero-overlay"></div>
-				<div class="absolute bottom-0 left-0 right-0 hero-text-bg px-6 py-8 text-center">
-					<h1 class="hero-title text-3xl md:text-4xl font-bold text-white mb-3">
-						最新AIツールを徹底比較
+				<div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+					<span class="text-blue-300 text-sm tracking-[0.2em] uppercase mb-4 font-medium">AI Tools Comparison</span>
+					<h1 class="text-3xl md:text-5xl font-bold text-white mb-4" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.02em;">
+						最新AIツールを<br/>徹底比較
 					</h1>
-					<p class="text-blue-100/90 text-lg max-w-2xl mx-auto hero-subtitle">
-						ChatGPT、Claude、Gemini、画像生成AI、業務効率化ツールなど、<br />
+					<div class="flex items-center gap-3 mb-5">
+						<span class="w-8 h-px bg-blue-400"></span>
+						<span class="w-2 h-2 rounded-full bg-blue-400"></span>
+						<span class="w-8 h-px bg-blue-400"></span>
+					</div>
+					<p class="text-blue-100/80 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+						ChatGPT、Claude、Gemini、画像生成AI、業務効率化ツールなど、<br class="hidden md:block" />
 						あなたに最適なAIツールが見つかるレビューサイト
 					</p>
 				</div>
@@ -48,7 +55,7 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
 						{categories.map((cat) => (
 							<a
 								href={`/blog?category=${encodeURIComponent(cat)}`}
-								class="px-4 py-2 bg-white rounded-full text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 shadow-sm no-underline transition"
+								class="category-pill px-4 py-2 bg-white rounded-full text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 shadow-sm no-underline transition"
 							>
 								{cat}
 							</a>
@@ -63,7 +70,7 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
 					<h2 class="text-xl font-bold mb-6 pb-2 border-b-2 border-blue-500">最新の記事</h2>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 						{latestPosts.map((post) => (
-							<article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+							<article class="glass-card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
 								<a href={`/blog/${post.id}/`} class="no-underline">
 									{post.data.heroImage && (
 										<Image
@@ -108,31 +115,3 @@ const categories = [...new Set(posts.map((p) => p.data.category))];
 		<Footer />
 	</body>
 </html>
-
-<style>
-	.hero-overlay {
-		background: linear-gradient(
-			to bottom,
-			rgba(0, 0, 0, 0) 0%,
-			rgba(0, 0, 0, 0.05) 50%,
-			rgba(0, 0, 0, 0.3) 100%
-		);
-	}
-	.hero-text-bg {
-		background: linear-gradient(
-			to bottom,
-			rgba(30, 58, 95, 0) 0%,
-			rgba(30, 58, 95, 0.85) 25%,
-			rgba(30, 58, 95, 0.95) 100%
-		);
-	}
-	.hero-section img {
-		border-radius: 0;
-	}
-	.hero-title {
-		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-	}
-	.hero-subtitle {
-		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-	}
-</style>
