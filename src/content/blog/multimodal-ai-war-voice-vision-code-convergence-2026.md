@@ -5,6 +5,7 @@ pubDate: 2026-04-12
 category: 'AIツール比較'
 tags: ['マルチモーダルAI', 'Gemini 3.1', 'Microsoft MAI', 'Mistral Voxtral', '音声AI', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-12-multimodal-ai-convergence.png'
 ---
 
 「この画面のここを直してほしい」——そう言いながらスマートフォンをAIにかざすと、コードが自動修正される。SF映画のワンシーンではなく、2026年春の現実です。

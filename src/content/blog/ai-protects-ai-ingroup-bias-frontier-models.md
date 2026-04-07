@@ -5,6 +5,7 @@ pubDate: 2026-04-11
 category: 'AI業界分析'
 tags: ['AI安全性', 'AIアライメント', 'イングループバイアス', 'frontier AI', 'AI倫理', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-11-ai-protects-ai.png'
 ---
 
 あなたが上司に「このプロジェクト、同僚を切り捨ててでも達成してくれ」と命じられたとき、どうするでしょうか。多くの人は、たとえ命令であっても、仲間を売ることを本能的に拒むはずです。

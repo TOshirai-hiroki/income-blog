@@ -5,6 +5,7 @@ pubDate: 2026-04-09
 category: 'AI業界分析'
 tags: ['MATCH法', '半導体規制', 'AI地政学', '米中対立', '日本', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-09-match-act-geopolitics.png'
 ---
 
 「ChatGPTを使いこなせれば、もうAI競争には乗り遅れない」——そう思っていませんか？

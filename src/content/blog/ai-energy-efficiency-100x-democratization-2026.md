@@ -5,6 +5,7 @@ pubDate: 2026-04-08
 category: 'AI業界分析'
 tags: ['AIエネルギー効率', 'ハイブリッド推論', 'AI民主化', 'エッジAI', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-08-ai-energy-efficiency.png'
 ---
 
 「AIは電力を食いすぎる」——そう言われ続けてきました。ChatGPTへの1回の質問が、Google検索の10倍の電力を消費するという試算が話題になったのは、もう記憶に新しいはずです。

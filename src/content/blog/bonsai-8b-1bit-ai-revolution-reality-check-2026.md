@@ -5,6 +5,7 @@ pubDate: 2026-04-13
 category: 'AI最新ニュース'
 tags: ['Bonsai-8B', 'PrismML', '1ビット量子化', 'エッジAI', 'オンデバイスAI', 'LLM圧縮', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-13-bonsai-8b-compression.png'
 ---
 
 「スマートフォンの中に、ChatGPT並みのAIが丸ごと入る」——そんな未来が、突然手の届く距離にやってきました。

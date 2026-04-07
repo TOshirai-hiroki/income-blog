@@ -5,6 +5,7 @@ pubDate: 2026-04-10
 category: 'AI最新ニュース'
 tags: ['Claude Mythos', 'Anthropic', 'AIセキュリティ', '10兆パラメータ', 'サイバー脅威', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-10-claude-mythos-security.png'
 ---
 
 「強いAIは、便利なAIではなく、危険なAIかもしれない」——そう感じたのは、いつ頃からでしょうか。
