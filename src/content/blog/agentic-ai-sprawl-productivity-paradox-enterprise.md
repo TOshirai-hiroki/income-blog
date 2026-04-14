@@ -5,6 +5,7 @@ pubDate: 2026-04-16
 category: 'AIツール活用'
 tags: ['AIスプロール', 'AI生産性', 'AIツール活用', 'デジタルウェルビーイング', 'エンタープライズAI', 'コンテキストスイッチング', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-16-agentic-ai-sprawl-productivity-paradox-enterprise.png'
 ---
 
 「Copilotで議事録を作り、Notionで整理して、ChatGPTで返信文を直して、Slackで共有する——」気づけば1時間、AIツールを渡り歩いて、肝心な仕事はまだ手つかず。そんな経験、ありませんか。

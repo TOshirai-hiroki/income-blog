@@ -5,6 +5,7 @@ pubDate: 2026-04-17
 category: 'AI業界分析'
 tags: ['知識蒸留', 'AI冷戦', '米中AI', 'OpenAI', 'Anthropic', 'Google', 'DeepSeek', 'AI安全性', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-17-us-china-ai-model-distillation-cold-war-frontier-forum.png'
 ---
 
 あなたが長年かけて磨いた専門知識を、競合他社の社員が「話を聞くだけ」で丸ごと習得してしまったとしたら、どう感じるでしょうか。

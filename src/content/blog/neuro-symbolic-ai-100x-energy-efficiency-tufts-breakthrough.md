@@ -5,6 +5,7 @@ pubDate: 2026-04-19
 category: 'テクノロジー解説'
 tags: ['ニューロシンボリックAI', 'AIエネルギー', 'タフツ大学', 'AI民主化', '省エネAI', '2026年']
 affiliate: false
+heroImage: '../../images/blog/2026-04-19-neuro-symbolic-ai-100x-energy-efficiency-tufts-breakthrough.png'
 ---
 
 電気代の請求書を見て、思わず眉をひそめたことはありませんか。家庭のエアコンや冷蔵庫が消費する電力に敏感になる一方で、私たちが毎日使っているAIツールが「どれほどの電気を食っているか」を意識する機会は、ほとんどありません。

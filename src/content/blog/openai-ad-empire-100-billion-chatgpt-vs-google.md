@@ -5,6 +5,7 @@ pubDate: 2026-04-15
 category: 'AI業界分析'
 tags: ['OpenAI', 'ChatGPT', '広告', 'Google', '検索広告', 'ビジネスモデル', 'AI業界']
 affiliate: false
+heroImage: '../../images/blog/2026-04-15-openai-ad-empire-100-billion-chatgpt-vs-google.png'
 ---
 
 「ChatGPTに広告が表示される」——その日が、じわじわと近づいています。
