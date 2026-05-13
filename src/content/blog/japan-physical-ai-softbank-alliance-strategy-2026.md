@@ -5,6 +5,7 @@ pubDate: 2026-05-15
 category: 'AI業界分析'
 tags: ['日本AI戦略', '物理AI', 'SoftBank', '主権AI', 'METI', 'Microsoft']
 affiliate: false
+heroImage: '../../images/blog/2026-05-15-japan-physical-ai-softbank-alliance-strategy-2026.png'
 ---
 
 「日本のAIは、もう手遅れではないか」——2024〜2025年、そう感じたビジネスパーソンは多いはずです。ChatGPT、Claude、Geminiの覇権は米国に握られ、DeepSeekやQwenを擁する中国が猛追する構図のなかで、日本企業の名前が世界の最前線で語られる機会はほぼありませんでした。

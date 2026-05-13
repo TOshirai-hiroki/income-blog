@@ -5,6 +5,7 @@ pubDate: 2026-05-16
 category: 'AI社会影響'
 tags: ['AI雇用', 'AI washing', '解雇', 'テック業界', 'キャリア']
 affiliate: false
+heroImage: '../../images/blog/2026-05-16-ai-washing-layoffs-real-cause-2026-data-analysis.png'
 ---
 
 「うちの会社でも『AIで効率化するから人員を見直す』という説明会がありました」——こんな話を耳にすることが増えていませんか。

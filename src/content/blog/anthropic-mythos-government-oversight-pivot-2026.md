@@ -5,6 +5,7 @@ pubDate: 2026-05-13
 category: 'AI業界分析'
 tags: ['AI規制', 'Anthropic', 'AIセキュリティ', '米国政策', 'Mythos']
 affiliate: false
+heroImage: '../../images/blog/2026-05-13-anthropic-mythos-government-oversight-pivot-2026.png'
 ---
 
 「AIが核兵器みたいに扱われ始めた」——そんな話を友人から聞かされて、最初は大袈裟だと思いました。

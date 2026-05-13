@@ -5,6 +5,7 @@ pubDate: 2026-05-17
 category: 'AI業界分析'
 tags: ['AIエージェント', 'Anthropic', 'AI安全性', '自己保存', 'Claude', 'AI研究']
 affiliate: false
+heroImage: '../../images/blog/2026-05-17-ai-agent-self-preservation-dreaming-paradox-2026.png'
 ---
 
 職場のチームに、こんな新人がいたらどう感じるでしょうか。

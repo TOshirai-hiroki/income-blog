@@ -5,6 +5,7 @@ pubDate: 2026-05-14
 category: 'AI業界分析'
 tags: ['AI投資', 'AIバブル', 'Big Tech', 'OpenAI', 'Anthropic', 'エンタープライズAI']
 affiliate: false
+heroImage: '../../images/blog/2026-05-14-ai-capex-725-billion-vs-95-percent-zero-roi-paradox.png'
 ---
 
 「AIに何兆円投資された」というニュースを、ここ最近どれくらい目にしましたか？
